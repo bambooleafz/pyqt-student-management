@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form_Modify</class>
+ <widget class="QWidget" name="Form_Modify">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>711</width>
+    <height>557</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>修改学生信息</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QLabel" name="label_Modify_Number">
+     <property name="font">
+      <font>
+       <family>等线</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>学号</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QTextEdit" name="textEdit_Modify_Number">
+     <property name="font">
+      <font>
+       <family>等线</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="tabChangesFocus">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="2">
+    <widget class="QPushButton" name="pushButton_Modify_Number">
+     <property name="font">
+      <font>
+       <family>等线</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>按学号查找并修改</string>
+     </property>
+     <property name="shortcut">
+      <string>Ctrl+S, Ctrl+R</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLabel" name="label_Modify_Name">
+     <property name="font">
+      <font>
+       <family>等线</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>姓名</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QTextEdit" name="textEdit_Modify_Name">
+     <property name="font">
+      <font>
+       <family>等线</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="tabChangesFocus">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="2">
+    <widget class="QPushButton" name="pushButton_Modify_Name">
+     <property name="font">
+      <font>
+       <family>等线</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>按姓名查找并修改</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0" colspan="2">
+    <widget class="QListView" name="listView">
+     <property name="font">
+      <font>
+       <family>等线</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="2">
+    <widget class="QPushButton" name="pushButton_Modify_Exit">
+     <property name="font">
+      <font>
+       <family>等线</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>退出</string>
+     </property>
+     <property name="shortcut">
+      <string>Esc</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>textEdit_Modify_Number</tabstop>
+  <tabstop>pushButton_Modify_Number</tabstop>
+  <tabstop>textEdit_Modify_Name</tabstop>
+  <tabstop>pushButton_Modify_Name</tabstop>
+  <tabstop>pushButton_Modify_Exit</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton_Modify_Exit</sender>
+   <signal>clicked()</signal>
+   <receiver>Form_Modify</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>360</x>
+     <y>625</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>360</x>
+     <y>328</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
